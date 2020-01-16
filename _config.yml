@@ -1,7 +1,7 @@
-title:              RitaJeong
+title:              Rita's blog
 email:              ritajeong.dev@gmail.com
-description:        Rita's blog
-author:             Rita
+description:        
+author:             Rita Jeong
 baseurl:            ""
 url:                "https://ritajeong.github.io"
 
@@ -13,6 +13,20 @@ github_username:    ritajeong
 
 # Add your google-analytics ID here to activate google analytics
 # google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+
+# The font used for headings. Expects a string that is a valid CSS font-family value.
+font_heading:        "'Merriweather-Light','Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif'"
+
+# The text font. Expects a string that is a valid CSS font-family value.
+font:                "'Merriweather-Light','Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif'"
+
+# The string encoding what fonts to fetch from Google Fonts.
+# See: https://qwtel.com/hydejack/docs/configuration/
+google_fonts:        Merriweather-Light
+
+# If you do not use a Google Fonts, uncomment the line below
+# no_google_fonts:     true
+
 
 # Build settings
 markdown:           kramdown
