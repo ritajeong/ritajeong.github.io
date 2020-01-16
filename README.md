@@ -12,7 +12,3 @@
 
 컴퓨터공학과 재학중인 4학년 학부생입니다. 2019 한이음 공모전에 입선한 후, 개발수기를 포스팅할 블로그를 만들고 싶어서 시작하게 되었어요. 더불어 수업에서 배우거나 혼자 공부하고 있는 내용을 올리고, 드문드문 책과 영화리뷰를 올려보려 합니다.  새해 복 많이 받으세요😃
 
-
-## Copyright and License
-
-Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/blob/gh-pages/LICENSE) license.
