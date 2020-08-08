@@ -2,6 +2,7 @@
 layout: post
 title: "알고리즘 스터디 1주차"
 subtitle: "자료구조, 다이나믹 프로그래밍"
+categories : [Study Group]
 date: 2019-12-28 19:39:00 -0400
 ---
 
