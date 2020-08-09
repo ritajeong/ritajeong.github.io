@@ -2,6 +2,9 @@
 layout: post
 title: "programmers lv1"
 subtitle: "콜라츠 추측"
+categories: ps
+tags: ps
+comments: true
 date: 2020-07-31 20:16:00 -0400
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Competition
-slug: competition
+title: TIL
+slug: til
 category: dev
 menu: false
 order: 2

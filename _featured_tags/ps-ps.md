@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: EnvOps
-slug: envOps
-category: envOps
+title: Problem Solving
+slug: ps
+category: ps
 menu: false
-order: 1
+order: 4
 ---

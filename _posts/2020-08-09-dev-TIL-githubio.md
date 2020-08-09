@@ -3,7 +3,7 @@ layout: post
 title: "github.io 카테고리 작업"
 subtitle: ""
 categories: dev
-tags:  TIL dev blog
+tags:  TIL dev
 comments: true
 date: 2020-08-09 11:23:00 -0400
 ---

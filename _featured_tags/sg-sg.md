@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Startup
-slug: startup
-category: startup
+title: Study Group
+slug: sg
+category: sg
 menu: false
-order: 1
+order: 6
 ---

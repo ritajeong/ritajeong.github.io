@@ -2,6 +2,9 @@
 layout: post
 title: "programmers lv1"
 subtitle: "하샤드 수"
+categories: ps
+tags:  programmers algorithm string ascii
+comments: true
 date: 2020-07-31 19:32:00 -0400
 ---
 

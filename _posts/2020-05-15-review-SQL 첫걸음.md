@@ -3,7 +3,7 @@ layout: post
 title: "[SQL 첫걸음]
 subtitle: "한빛미디어, 아사이 아츠시. 메모하며 읽기"
 categories: review
-tags:  db review book 
+tags: review
 comments: true
 date: 2020-05-15 13:32:00 -0400
 ---

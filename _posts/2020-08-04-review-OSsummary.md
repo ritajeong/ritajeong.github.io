@@ -3,7 +3,7 @@ layout: post
 title: "OS summary"
 subtitle: "운영체제 10판. cheeting sheet"
 categories: review
-tags:  os review book
+tags: review
 comments: true
 date: 2020-08-04 11:57:00 -0400
 ---

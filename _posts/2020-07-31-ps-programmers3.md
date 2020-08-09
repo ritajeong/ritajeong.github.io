@@ -2,6 +2,9 @@
 layout: post
 title: "programmers lv1"
 subtitle: "이상한 문자 제거하기"
+categories: ps
+tags:  programmers algorithm string
+comments: true
 date: 2020-07-31 18:09:00 -0400
 ---
 

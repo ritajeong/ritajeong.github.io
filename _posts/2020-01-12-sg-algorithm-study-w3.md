@@ -2,8 +2,8 @@
 layout: post
 title: "알고리즘 스터디 3주차"
 subtitle: "그래프"
-categories: study-group
-tags: algorithm study  
+categories: sg
+tags: sg
 comments: true
 date: 2019-12-28 19:39:00 -0400
 ---

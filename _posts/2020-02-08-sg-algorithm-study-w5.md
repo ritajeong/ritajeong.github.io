@@ -2,8 +2,8 @@
 layout: post
 title: "알고리즘 스터디 5주차"
 subtitle: "그래프 다시보기"
-categories: study-group
-tags: algorithm study  
+categories: sg
+tags: sg
 comments: true
 date: 2020-02-08 06:34:00 -0400
 ---

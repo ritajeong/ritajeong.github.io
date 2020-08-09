@@ -1,6 +1,6 @@
 ---
 layout: list
-title: StudyGroup
+title: Study Group
 slug: sg
 menu: true
 submenu: false

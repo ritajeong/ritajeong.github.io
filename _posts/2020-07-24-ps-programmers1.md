@@ -2,8 +2,8 @@
 layout: post
 title: "programmers 소수찾기"
 subtitle: ""
-categories: problem-solving
-tags:  programmers algorithm bruteforce
+categories: ps
+tags: ps
 comments: true
 date: 2020-07-24 12:56:00 -0400
 ---
