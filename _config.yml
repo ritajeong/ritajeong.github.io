@@ -51,7 +51,7 @@ disqus: True
 disqus_shortname:    rita
 
 # This text will appear in the footer of every page. Markdown enabled.
-copyright:           '&copy; 2019.04. by theorydb'
+copyright:           '&copy; 2020.08. by ritajeong'
 
 # Format of the permalinks
 permalink:           pretty
