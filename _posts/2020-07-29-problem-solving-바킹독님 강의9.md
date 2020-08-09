@@ -1,0 +1,128 @@
+---
+layout: post
+title: "바킹독의 실전 알고리즘 0x09강 BFS "
+subtitle: "도입과 1926그림 문제"
+categories: problem-solving
+tags:  barkingdog algorithm class bfs youtube
+comments: true
+date: 2020-07-29 18:40:00 -0400
+--- 
+
+
+## 알고리즘 설명
+- 플러드 필
+클릭한 칸의 상하좌우를 보며 나와 색이 같은지 확인하고, 같은 칸에 대해 또 상하좌우로 확인...      
+- BFS로 해결할 수 있다.   
+BFS(Breadth First Search) : 다차원 배열에서 각 칸을 방문할 때 우선으로 방문하는 알고리즘   
+그래프에서 모든 노드를 방문하기 위한 알고리즘   
+- 큐를 사용한다. 모든 칸이 큐에 한 번씩 들어가므로 시간복잡도는 칸이 n개일때 O(n)   
+- STL의 pair를 사용한다.   
+```cpp
+pair<int,int> t1 = make_pair(10,13); //과 같이 사용
+pair<int,int> t2 = {4, 6} // C++11이상
+cout<<t1.first<<' '<<t1.second<<'\n';
+```
+- 큐에 좌표를 넣을 때 pair를 사용한다.   
+큐에서 원소를 빼고, 상하좌우의 칸을 확인하는 식으로 구현   
+- BFS에서는 정석적인 구현이 있으므로 거의 외우다시피 해도 괜찮다. 삼성 A형에서 숙달되어있어야함
+
+[바킹독님 코드](https://github.com/encrypted-def/basic-algo-lecture-metarial/blob/master/0x09/BFS.cpp)
+~~~cpp
+#include <bits/stdc++.h>
+using namespace std;
+#define X first // pair에서 first, second를 줄여서 쓰기 위해서 사용
+#define Y second //t.first 대신 t.X
+int board[502][502] ={... }; // 1이 파란 칸, 0이 빨간 칸에 대응
+bool vis[502][502]; // 해당 칸을 방문했는지 여부를 저장
+int n = 7, m = 10; // n = 행의 수, m = 열의 수
+int dx[4] = {1,0,-1,0};
+int dy[4] = {0,1,0,-1}; // 상하좌우 네 방향을 의미
+int main(void){
+  ios::sync_with_stdio(0);
+  cin.tie(0);
+  queue<pair<int,int> > Q;
+  vis[0][0] = 1; // (0, 0)을 방문했다고 명시
+  Q.push({0,0}); // 큐에 시작점인 (0, 0)을 삽입.
+  while(!Q.empty()){
+    pair<int,int> cur = Q.front(); Q.pop();
+    cout << '(' << cur.X << ", " << cur.Y << ") -> ";
+    for(int dir = 0; dir < 4; dir++){ // 상하좌우 칸을 살펴볼 것이다.
+      int nx = cur.X + dx[dir];
+      int ny = cur.Y + dy[dir]; // nx, ny에 dir에서 정한 방향의 인접한 칸의 좌표가 들어감
+      if(nx < 0 || nx >= n || ny < 0 || ny >= m) continue; // 범위 밖일 경우 넘어감
+      if(vis[nx][ny] || board[nx][ny] != 1) continue; // 이미 방문한 칸이거나 파란 칸이 아닐 경우
+      vis[nx][ny] = 1; // (nx, ny)를 방문했다고 명시
+      Q.push({nx,ny});
+    }
+  }
+}
+~~~
+
+- 유의점 : x가 행, y가 열   
+헷갈리기 쉽다. 
+        x-1,y
+x,y-1     x,y     x,y+1
+        x+1,y
+
+
+## 자주 실수하는 점
+1. 시작점에 방문했다는 표시를 남기지 않는다.
+2. 큐에 넣을 때 방문했다는 표시를 하는 대신 큐에서 빼낼 때 방문했다는 표시를 남겼다. 
+3. 이웃한 원소가 범위를 벗어났는 지에 대한 체크를 잘못했다.
+
+## 문제풀기
+- boj.kr/1926 그림 : BFS의 기본예제
+
+### 내가 짠 코드
+그림의 개수는 알겠는데 그림의 크기는 어떻게 하지?   
+틀린 걸 너무 오래 고민하는가 싶어서 다시 영상을 참고했다.
+이중포문으로 해결할 수 있다네요..
+```cpp
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <algorithm>
+using namespace std;
+#define X first
+#define Y second
+int board[502][502];
+bool vis[502][502];
+int n, m;
+int fx[4] = { 1,0,-1,0 };
+int fy[4] = { 0,1,0,-1 };
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	cin >> n >> m;
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			cin >> board[i][j];
+		}
+	}
+	int cnt = 0; //그림의 개수
+	int max,mmax=0; //그림의 크기
+	
+	queue<pair<int, int>> q;
+	vis[0][0] = 1;
+	q.push({ 0,0 });
+	while (!q.empty()) {
+		max = 0;
+		pair<int, int> cur = q.front();
+		q.pop();
+		cnt++;
+		for (int i = 0; i < 4; i++) {
+			int nx = cur.X + fx[i];
+			int ny = cur.Y + fy[i];
+			if (nx < 0 || nx >= n || ny < 0 || ny >= m) //범위체크
+				continue;
+			if (vis[nx][ny] || board[nx][ny] != 1) //이미 방문했거나 0인지 체크
+				continue;
+			vis[nx][ny] = cnt; // (nx,ny)를 방문했다고 체크
+			q.push({ nx,ny }); //큐에 넣을 때 방문했다고 체크해야한다
+		}
+		if (max > mmax)
+			mmax = max;
+	}
+	cout << cnt << '\n' << mmax;
+}
+```
