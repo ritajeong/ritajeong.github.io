@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "[깔끔한 파이썬 탄탄한 백엔드]"
-subtitle: "1과 실습"
+title: "[깔끔한 파이썬 탄탄한 백엔드] 1장"
+subtitle: "1장 실습"
 categories: dev
 tags: til
 comments: true
-date: 2020-08-09 11:23:00 -0400
+date: 2020-08-09 19:01:00 -0400
 ---
 
 

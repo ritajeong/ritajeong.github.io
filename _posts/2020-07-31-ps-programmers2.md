@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "programmers lv1"
+title: "programmers lv1 제일 작은 수 제거하기"
 subtitle: "제일 작은 수 제거하기"
 categories: ps
-tags:  programmers algorithm vector
+tags: ps
 comments: true
 date: 2020-07-31 18:09:00 -0400
 ---

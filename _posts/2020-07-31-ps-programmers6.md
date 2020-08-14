@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "programmers lv1"
+title: "programmers lv1 콜라츠 추측"
 subtitle: "콜라츠 추측"
 categories: ps
 tags: ps

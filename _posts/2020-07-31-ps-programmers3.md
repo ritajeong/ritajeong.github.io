@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "programmers lv1"
+title: "programmers lv1 이상한 문자 제거하기"
 subtitle: "이상한 문자 제거하기"
 categories: ps
-tags:  programmers algorithm string
+tags: ps
 comments: true
 date: 2020-07-31 18:09:00 -0400
 ---

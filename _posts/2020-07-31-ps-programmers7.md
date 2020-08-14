@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "programmers lv1"
+title: "programmers lv1 x만큼 간격이 있는 n개의 숫자"
 subtitle: "x만큼 간격이 있는 n개의 숫자"
 categories: ps
-tags:  programmers algorithm vector
+tags: ps
 comments: true
 date: 2020-07-31 21:05:00 -0400
 ---
