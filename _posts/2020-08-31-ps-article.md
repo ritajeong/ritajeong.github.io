@@ -10,7 +10,10 @@ date: 2020-08-31 9:03:00 -0400
 
 알고리즘 공부를 하면서..<br>
 살짝 자괴감이 들어서 잠깐 공부법에 대한 구글링을 했다.<br>
+[baactree님 블로그](https://baactree.tistory.com/52)
 <br>
+
+[An subin님 블로그-PS를 공부하는 방법](https://subinium.github.io/how-to-study-problem-solving/)
 <br>
 
  1. 구현력<br>
@@ -57,11 +60,15 @@ BOJ 모든 [별찍기]와 [n과 m] 시리즈
 <br>
 
 만약 접근은 충분히 잘했는데 구현하는데 시간이 너무 오래 걸리고 디버깅하는데 시간을 많이 쓴다면, 본인이 자주 한 구현 실수들을 정리하고 대략적인 순서도를 그리고 자주 사용하는 부분을 함수로 템플릿화를 하는 것을 연습하는 것이 좋다. <br>근본적으로 코드길이가 줄어들어야 실수할 확률이 줄어든다.<br>
-출처 : https://baactree.tistory.com/52
+ 출처 : [baactree님 블로그](https://baactree.tistory.com/52)
+<br>
+
 <br><br>
 코딩 테스트를 준비하는 분들이라면 DFS/BFS, 백트래킹, 정렬 등 시뮬레이션 위주 의 구현 문제를 많이 연습해야합니다.<br>
  최근에는 DP, 분할 정복 문제의 비율도 높고 난이도도 어렵습니다.<br>
- 출처 : https://subinium.github.io/how-to-study-problem-solving/
+
+출처 : [An subin님 블로그-PS를 공부하는 방법](https://subinium.github.io/how-to-study-problem-solving/)
+<br>
 
 
 
