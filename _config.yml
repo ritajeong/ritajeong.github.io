@@ -13,16 +13,16 @@ url:                 https://ritajeong.github.io
 baseurl:             ""
 
 # A very short description of your page
-tagline:             "jinu~"
+tagline:             "devlog"
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  hello world!
+  One must live the way one thinks or end up thinking the way one has lived.
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
-  name:              rita
+  name:              ritajeong
   email:             litch0s2@gmail.com
 
 # Fallback image and color
