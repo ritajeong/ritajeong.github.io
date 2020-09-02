@@ -11,12 +11,15 @@ date: 2020-08-24 16:47:00 -0400
 안녕하세요!  
 저는 이번 학기에 막학기만 남겨두고 있는 4학년 취준생입니다.  
 졸업설계(=졸업프로젝트, 캡스톤)를 앞두고 있는데요,  
-다행히 방학중에 팀을 먼저 구해서 스터디를 진행하게 되었습니다.
+다행히 방학중에 팀을 먼저 구해서 스터디를 진행하게 되었습니다.	
+
 <br>
 - 8월 5일 : 첫 미팅  
 이날은 서로 인사를 나누고 팀프로젝트의 방향에 대해 이야기 나눴습니다.  
 신기술을 접목시킨 주제가 승인되는 경우가 많다고 들어서,  
-다음 미팅까지 인공지능 기반의 아이디어를 3가지씩 생각해오기로 했습니다.
+다음 미팅까지 인공지능 기반의 아이디어를 3가지씩 생각해오기로 했습니다.	
+
+<br>
 <br>
 - 8월 12일 : 아이디어 회의  
 음성인식, 이미지인식, AR기반의 앱, 헬스케어, 자율주행 등..  
@@ -24,10 +27,14 @@ date: 2020-08-24 16:47:00 -0400
 회의가 꽤 길어졌습니다.  
 카페에서 회의를 마치고, 이날은 식사도 했네요 :)  
 <br>
+<br>
 - 8월 25일 : 코세라 스터디 시작  
 기본적인 머신러닝 지식을 익히기 위해  
 약 1~2주간 하루에 1주차를 끝내는 마음으로 코세라 강의를 듣기 시작했습니다.  
 혼자였으면 늘어졌을 수도 있는데, 팀원들과 같이 들으니까 확실히 시너지가 나고 좋았어요.  
+
+<br>
+<br>
 
 ## 코세라 스터디 1주차
 키워드 중심으로 메모하면서 들었습니다.  
@@ -48,9 +55,9 @@ date: 2020-08-24 16:47:00 -0400
 - Tom Mitchell provides a more modern definition:	
  "A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E."	
 
-	E = the experience of playing many games of checkers	
-	T = the task of playing checkers.	
-	P = the probability that the program will win the next game.	
+	E = the experience of playing many games of checkers	<br>
+	T = the task of playing checkers.	<br>
+	P = the probability that the program will win the next game.	<br>
 
 ### Supervised Learning
 - 학습목표 :  지도학습을 알아보고 공식적인 정의 알아봄.		 
@@ -233,7 +240,10 @@ A_23 = A(2,3)
 ```
 
 ### Addition and Scalar Multiplication
-- 더하기, 스칼라곱
+
+- 더하기, 스칼라곱	
+
+
 ```matlab
 % Initialize matrix A and B 
 A = [1, 2, 4; 5, 3, 2]
@@ -260,7 +270,9 @@ add_As = A + s
 
 
 ### Matrix Vector Multiplication
+
 - 행렬*벡터
+
 ``` matlab
 % Initialize matrix A 
 A = [1, 2, 3; 4, 5, 6;7, 8, 9] 
@@ -274,7 +286,9 @@ Av = A * v
 
 
 ### Matrix Matrix Multiplication
+
 - 행렬*행렬
+
 ```matlab
 % Initialize a 3 by 2 matrix 
 A = [1, 2; 3, 4;5, 6]
@@ -290,7 +304,9 @@ mult_AB = A*B
 
 
 ### Matrix multiplication Properties
+
 - 항등행렬
+
 ```matlab
 % Initialize random matrices A and B 
 A = [1,2;4,5]
@@ -318,6 +334,7 @@ BA = B*A
 
 
 ### Inverse and Transpose
+
 역행렬
 ```matlab
 % Initialize matrix A 

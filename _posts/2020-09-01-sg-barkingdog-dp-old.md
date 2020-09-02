@@ -8,7 +8,8 @@ comments: true
 date: 2020-09-01 08:45:00 -0400
 ---
 스크랩한 글입니다. 
- https://blog.encrypted.gg/737?category=773649
+(바킹독의 알고리즘 DP) [https://blog.encrypted.gg/737?category=773649]  
+중요하다고 생각되는 부분, 필요한 부분을 저장하고자 함
 <br>
 
  0x06강에서 재귀함수로 구현했을 경우 NN번째 항을 구하는데 O(1.618^N)O(1.618 N)이 필요했지만 <br>
