@@ -17,6 +17,10 @@ date: 2020-08-30 16:49:00 -0400
 (과제도 오래걸리기도 하고..)	
 교수님이 말하신 멘트 중 중요한 문장을 스크랩하는 식으로 공부하려합니다. 	
 
+# Multivariate Linear Regression
+## Multiple Features
+- 학습목표 : 하나 이상의 변수나 feature를 다루기 위한 더 강력한 선형회귀에 대해 알아보자
+
 ## Gradient Descent for Multiple Variables
 - 학습목표 : 여러 요소들의 선형 회귀에 경사 하강법을 적용하는 지도 알아보도록 하겠습니다.
 <br><br>
@@ -33,7 +37,7 @@ gradient descent는 더 빠르게 수렴할 수 있습니다.<br><br>
 그와 비슷하게 -3~3정도까지도 괜찮다. or -1/3~1/3.<br>
 그러나 -100~100처럼 너무 크거나 너무 작으면 안됨<br>
 
-## Mean normalization
+### Mean normalization
 - 평균을 0으로 만들어 scale을 줄이는방법.
 
 ## Gradient Descent in Practice II - Learning Rate

@@ -89,6 +89,3 @@ but every now and again you want to do something that requires that you are root
 38:02 $cat brightness
 $sudo echo 500 > brightness
 
-
-댓글도 남겼다. ㅎ.ㅎ
-<img src="/assets/img/posts/2020-08-15.png" width="50%" height ="50%">  
