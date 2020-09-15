@@ -8,7 +8,7 @@ comments: true
 date: 2020-09-01 08:45:00 -0400
 ---
 스크랩한 글입니다. 
-(바킹독의 알고리즘 DP) [https://blog.encrypted.gg/737?category=773649]  
+[바킹독의 알고리즘 DP](https://blog.encrypted.gg/737?category=773649)
 중요하다고 생각되는 부분, 필요한 부분을 저장하고자 함
 <br>
 
@@ -18,4 +18,3 @@ date: 2020-09-01 08:45:00 -0400
 
  코딩테스트에 나올 수준의 DP 문제는 일단 점화식만 이끌어놓고 나면 <br>그 뒤는 반복문을 돌면서 배열을 채워나가면 되기 때문에 구현이 굉장히 간단한 편에 속합니다. <br>
 <br>
- https://blog.encrypted.gg/737?category=773649
