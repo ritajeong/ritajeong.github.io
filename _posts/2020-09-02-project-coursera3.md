@@ -62,3 +62,7 @@ So, with these visualizations, I hope that gives you a sense of what's the range
 - 장점 : No need to manually pick alpha. Often faster than gradient descent.
 - 단점 : More complex.
 - 다른 알고리즘들은 직접 구현하기보다 라이브러리를 사용하는 것을 추천. 
+
+## Multiclass Classification: One-vs-all 
+- 학습목표 : 멀티클래스 분류 문제에 대해 로지스틱 회귀를 어떻게 적용하는지,  특히 'one-vs-all'분류라고 불리는 알고리즘에 대해 배운다.   
+- 

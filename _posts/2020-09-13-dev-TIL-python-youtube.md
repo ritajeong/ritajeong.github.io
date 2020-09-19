@@ -7,8 +7,8 @@ tags: TIL
 comments: true
 date: 2020-09-13 14:08:00 -0400
 --- 
-[파이썬은 어디에 쓰일까?](https://youtu.be/SzNFCim9nDE)         
-[파이썬이 쓰이는 분야](https://youtu.be/PH2XhO-XyZw)    
+[파이썬은 어디에 쓰일까? (유튜브링크)](https://youtu.be/SzNFCim9nDE)         
+[파이썬이 쓰이는 분야 (유튜브링크)](https://youtu.be/PH2XhO-XyZw)    
 
 
 
