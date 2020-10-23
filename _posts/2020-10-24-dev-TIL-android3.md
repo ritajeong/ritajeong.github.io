@@ -16,7 +16,7 @@ Indent란 기존 A라는 액티비티에서 B라는 액티비티(화면)으로 �
 
 이번 실습에서는 화면이 두개가 있어여 A에서 B로 이동할 수 있으므로   
 MainActivity.java가 두개 필요함!    
-<img src="/assets/img/posts/Cap 2020-10-24 05-36-22-.jpg">
+<img src="/assets/img/posts/Cap 2020-10-24 05-36-22-.jpg">  
 SubActivity.java를 생성하면 activity_sub.xml이 자동 생성됨.      
 
 
