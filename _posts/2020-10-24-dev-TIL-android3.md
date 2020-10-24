@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "안드로이드 강의3"
+title: "안드로이드 강의3 Intent 화면전환"
 subtitle: ""
 categories: dev
 tags: til

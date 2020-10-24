@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "안드로이드 강의1"
+title: "안드로이드 강의1 개발환경 설정"
 subtitle: ""
 categories: dev
 tags: til

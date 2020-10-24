@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "안드로이드 강의4"
+title: "안드로이드 강의4 ImageView & Toast"
 subtitle: ""
 categories: dev
 tags: til

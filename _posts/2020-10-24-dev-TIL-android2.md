@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "안드로이드 강의2"
+title: "안드로이드 강의2 EditText&Button"
 subtitle: ""
 categories: dev
 tags: til
