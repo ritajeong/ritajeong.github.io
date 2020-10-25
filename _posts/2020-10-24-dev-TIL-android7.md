@@ -1,77 +1,144 @@
 ---
 layout: post
-title: "안드로이드 강의6 ListView"
+title: "안드로이드 강의7 Navigation menu"
 subtitle: ""
 categories: dev
 tags: til
 comments: true
-date: 2020-10-24 22:50:00 -0400
+date: 2020-10-25 09:50:00 -0400
 ---
 
-## ListView     
-[홍드로이드님 안드로이드 강의 #6](https://youtu.be/snnqxAEf9rI)    
+## Navigation menu     
+[홍드로이드님 안드로이드 강의 #7](https://youtu.be/2yDa2KiY03s)    
+
+이번 강의에서는 Navigation Drawer Activity 템플릿으로 새 프로젝트를 만들었다.   
+나는 이전에 만들던 프로젝트에 Navigation Drawer Activity를 추가하는 식으로 만들어봤다.  
 
 
-강의에서는 새로 empty프로젝트를 생성했으나  
-나는 이전 SubActivity에 이어서 리스트뷰를 만들어보았다.     
+- MainActivity.java의 onNavigationItemSelected 함수에서   
+아이콘을 클릭하면 취할 액션을 설정한다.     
 
-<img src ="/assets/img/posts/Cap 2020-10-24 23-16-02-247.jpg">      
+- res/menu/activity_main_drawer.xml  
+여기에는 drawer의 아이콘을 설정할 수 있다.  
+title에서 아이콘 옆에 붙는 이름을 설정할 수 있다.   
 
-자바에서 자료구조는 처음인데,   
-ArrayList가 List 인터페이스를 상속받은 클래스로     
-크기가 가변적으로 변하는 선형리스트라고 한다.   
-C++에서 list와 동일한 것 같다.      
+문제점 : NavActivity.java 에 Navigation Drawer Activity를 생성했는데    
+MainActivity.java에서 Intent를 어떻게 설정할 지 모르겠다.   
+선택한 방법은 일단 강의를 더 듣기   
+시간이 촉박한데 큰일이다 ㅠ
 
 
-
-### AndroidManifest.xml 파일 소스코드
+NavActivity.java
 ```java
 package com.example.study1;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.TextView;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.Menu;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.navigation.NavigationView;
 
-public class SubActivity extends AppCompatActivity {
+import androidx.annotation.NonNull;
+import androidx.core.view.GravityCompat;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.ui.NavigationUI;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
-    private ListView list;
-    private TextView tv_sub;
+public class NavActivity extends AppCompatActivity {
+
+    private AppBarConfiguration mAppBarConfiguration;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) { //앱의 시작지점
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sub);
+        setContentView(R.layout.activity_nav);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-        tv_sub = findViewById(R.id.tv_sub);
+        FloatingActionButton fab = findViewById(R.id.fab); // 버튼을 띄우는 아이콘을 관리
+        fab.setOnClickListener(new View.OnClickListener() { //선언
+            @Override
+            public void onClick(View view) { //fab을 클릭했을 때 snackbar가 나오도록
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }//람다로 쓰는 거 연습하기
+        });//스낵바는 토스트랑 비슷한데 더 업그레이드 버전. 더 세련된 디자인의 팝업임
 
-        list = (ListView)findViewById(R.id.list);
-        List<String> data = new ArrayList<>();
+        //drawer layout은 리스트뷰를 왼쪽에서 꺼낼 때 씀
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        // Passing each menu ID as a set of Ids because each
+        // menu should be considered as top level destinations.
+        mAppBarConfiguration = new AppBarConfiguration.Builder(
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                .setDrawerLayout(drawer)
+                .build();
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
+        NavigationUI.setupWithNavController(navigationView, navController);
+    }
 
-        //list와 data를 담은, 중간다리 역할을 하는 어댑터 만듬
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, data);
-        list.setAdapter(adapter); //리스트뷰에 어댑터 생성
-        //adapter라는 이름으로 선언한 어댑터를 list에 세팅해줌
+    @Override
+    public void onBackPressed() { //뒤로 가기 버튼을 누를 때 아래 액션을 취함
+        //뒤로 가기를 눌렀을 때 drawer layout을 찾아주고
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if(drawer.isDrawerOpen(GravityCompat.START)){ //열려있으면
+            drawer.closeDrawer(GravityCompat.START);//닫기
+        }else {
+            super.onBackPressed(); //안 열려있으면 뒤로 가기.
+        }
+    }
 
-        //연결완료. 아이템 추가
-        data.add("아이템1");
-        data.add("아이템2");
-        data.add("아이템3");
-        adapter.notifyDataSetChanged(); //저장완료. 
+    //앱을 시작할 때 옵션메뉴를 생성
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.nav, menu); //만들어놓은 템플릿을 가져옴
+        return true;
+    }
 
+    //옵션메뉴가 클릭되었을 때
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
 
-        Intent intent = getIntent();
-        String str = intent.getStringExtra("str");
+        //noinspection SimplifiableIfStatement
+        if(id == R.id.action_settings){
+            return true;
+        }
 
-        tv_sub.setText(str);
+        return super.onOptionsItemSelected(item);
+    }
 
+    public boolean onNavigationItemSelected(MenuItem item){
+        int id = item.getItemId();
+        //아이템 셀렉트가 이루어졌을 때 메뉴를 누르면 그 메뉴에 대한 액션이 이루어짐
+        if(id==R.id.nav_gallery){
 
+        }else if(id ==R.id.nav_gallery){
+
+        }else if(id==R.id.nav_slideshow){
+
+        }
+
+        //drawer layout을 아예 닫아버리겠다
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+        return NavigationUI.navigateUp(navController, mAppBarConfiguration)
+                || super.onSupportNavigateUp();
     }
 }
 ```
