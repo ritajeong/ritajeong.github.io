@@ -2,8 +2,8 @@
 layout: post
 title: "Coursera Machine Learning Study Week3"
 subtitle: ""
-categories: project
-tags: project
+categories: sg
+tags: sg
 comments: true
 date: 2020-09-02 20:13:00 -0400
 ---
