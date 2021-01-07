@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: TIL
-slug: til
-category: dev
+title: Ssafy
+slug: ssafy
+category: ssafy
 menu: false
 order: 2
 ---

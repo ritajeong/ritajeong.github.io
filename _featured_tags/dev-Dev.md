@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Dev
-slug: dev
+title: TIL
+slug: til
 category: dev
 menu: false
 order: 1

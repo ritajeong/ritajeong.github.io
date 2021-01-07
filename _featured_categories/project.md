@@ -6,5 +6,5 @@ menu: true
 submenu: false
 order: 2
 description: >
-  프로젝트를 진행했던 과정을 기록하는 공간
+  시험, 면접 후기, 프로젝트 개발수기
 ---
