@@ -3,7 +3,7 @@ layout: post
 title: "ssafy 5기 지원후기"
 subtitle: ""
 categories: project
-tags: project
+tags: diary
 comments: true
 date: 2021-01-02 21:45:00 -0400
 ---
