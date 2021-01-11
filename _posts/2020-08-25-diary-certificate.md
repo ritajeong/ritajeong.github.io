@@ -2,8 +2,8 @@
 layout: post
 title: "정보처리기사 필기시험 후기"
 subtitle: ""
-categories: diary
-tags: diary
+categories: project
+tags: project
 comments: true
 date: 2020-08-25 11:10:00 -0400
 ---
