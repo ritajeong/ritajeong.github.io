@@ -7,6 +7,8 @@ tags: diary
 comments: true
 date: 2021-01-02 21:45:00 -0400
 ---
+<img src="/assets/img/posts/KakaoTalk_20210124_103051628.jpg">    
+
 
 ## SSAFY 서류접수
 기본적인 사항을 체크하는 문항과, 자소서가 있었다.   
