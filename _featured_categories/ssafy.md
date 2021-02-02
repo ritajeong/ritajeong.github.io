@@ -1,10 +1,10 @@
 ---
 layout: list
-title: Ssafy
-slug: ssafy
+title: TIL
+slug: til
 menu: true
 submenu: false
 order: 2
 description: >
-  SSAFY 5기 기록
+  매일의 공부 기록
 ---
