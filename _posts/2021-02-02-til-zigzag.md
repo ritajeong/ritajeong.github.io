@@ -8,7 +8,7 @@ comments: true
 date: 2021-02-01 23:01:00 -0400
 ---
 
-지그재그 순회
+지그재그 순회  
 
 ```java
 import java.util.Scanner;
