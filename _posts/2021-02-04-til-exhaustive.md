@@ -164,3 +164,48 @@ public class DiceTest {
 }// 클래스 끝
 
 ```
+
+```java
+package basic;
+
+import java.util.Arrays;
+
+public class BASIC_Comb_RC_Two {
+	static int COUNT;
+	static int[] src = { 1, 2, 3, 4, 5 };
+	static int[] tgt = new int[3]; // [ 1 ] [ 2 ] [ 3 ]
+	// select 배열 필요없음
+	// 한번 뽑히면 더이상 뽑히지 않음
+	// 되돌아오지 않음
+
+	public static void main(String[] args) {
+		comb(0, 0); // src와 tgt 같이감.
+		System.out.println(COUNT);
+	}
+
+	static void comb(int srcIdx, int tgtIdx) { //디버깅 할 때 depth 추가해보기.
+		
+		// 기저
+		if (tgtIdx == tgt.length) {
+			System.out.println(Arrays.toString(tgt));
+			COUNT++;
+			return;
+		}
+
+		//srcIdx 기저조건
+		if (srcIdx == src.length)
+			return;
+
+		
+		tgt[tgtIdx] = src[srcIdx];
+		comb(srcIdx + 1, tgtIdx + 1);
+		comb(srcIdx + 1, tgtIdx); //srcIdx를 안 받겠다. 
+
+//		for (int i = srcIdx; i < src.length; i++) {
+//			tgt[tgtIdx] = src[i]; // 소스에서 선택함.
+//			comb(i + 1, tgtIdx + 1);
+//		}
+
+	}
+}
+```
