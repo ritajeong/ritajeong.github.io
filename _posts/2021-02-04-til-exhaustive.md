@@ -201,6 +201,10 @@ public class BASIC_Comb_RC_Two {
 		comb(srcIdx + 1, tgtIdx + 1);
 		comb(srcIdx + 1, tgtIdx); //srcIdx를 안 받겠다. 
 
+		// comb(srcIdx,tgtIdx+1); //중복조합
+		// comb(srcIdx+1,tgtIdx);
+		
+
 //		for (int i = srcIdx; i < src.length; i++) {
 //			tgt[tgtIdx] = src[i]; // 소스에서 선택함.
 //			comb(i + 1, tgtIdx + 1);
@@ -208,4 +212,50 @@ public class BASIC_Comb_RC_Two {
 
 	}
 }
+```
+
+```java
+ //순열
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+	static int src[];
+	static int tgt[];	
+	static int n,m;
+	static boolean select[];
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		n= sc.nextInt();
+		m = sc.nextInt();
+		src = new int[n];
+		tgt= new int[m];
+		select = new boolean[n];
+		for (int i = 0; i < n; i++) {
+			src[i] = sc.nextInt();
+		}
+		Arrays.sort(src);
+		func(0);
+		sc.close();
+	}
+	static void func(int tgtIdx){
+		if(tgtIdx == m) {
+			for (int i = 0; i < m; i++) {
+				System.out.print(tgt[i]+" ");
+			}
+			System.out.println();
+			return;
+		}
+		for (int i = 0; i < src.length; i++) {
+			//if(select[i])continue; //주석처리하면 중복순열
+			tgt[tgtIdx] = src[i];
+			select[i] = true;
+			func(tgtIdx+1);
+			select[i] = false;
+		}
+		
+	}
+}
+
 ```
