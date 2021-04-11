@@ -8,7 +8,7 @@ comments: true
 date: 2021-04-01 22:45:00 -0400
 ---
 
-<img src="\assets\img\posts20210401.jpg">  
+<img src="\assets\img\posts\20210401.jpg">  
 
 이클립스 2018-09버전과 Zulu(자바8)를 사용하면서 근 한달간 sun.security.ssl 오류를 겪었다.   
 우선 이클립스를 켜면 gradle 시동중에 에러가 생겼다고 메시지가 뜨고,  

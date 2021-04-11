@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "이클립스 및 Zulu -sun.security.ssl 관련 오류"
+title: "BE, DB PJT 돌아보기"
 subtitle: ""
 categories: project
 tags: project
