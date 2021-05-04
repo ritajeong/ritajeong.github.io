@@ -99,12 +99,12 @@ xml 설정 파일에 등록된 클래스를 찾아서
 객체 생성시 기본적으로 디폴트 생성자를 호출함.  
 매개변수 생성자를 호출하도록 설정할 수 있다. 
 - 매개변수 생성자 예시
-```xml
-<bean id="tv" class="polymorphism.SamsungTV">
-  <constructor-arg index="0" ref="sonny"></constructor-arg>
-  <constructor-arg index="1" value="27000000"></constructor-arg>  
-</bean>  
-```
+
+<bean id="tv" class="polymorphism.SamsungTV">  
+  <constructor-arg index="0" ref="sonny"></constructor-arg>  
+  <constructor-arg index="1" value="27000000"></constructor-arg>    
+</bean>    
+
 ref 속성 :  객체의 아이디나 이름을 참조함  
 value 속성 : 고정된 문자열이나 정수 같은 기본형 데이터일 때 
 index 속성 : 어떤 값이 몇번째 매개변수로 매핑되는지 지정할 수 있다.  
@@ -146,10 +146,11 @@ Namespace 탭을 선택하고 context항목만 체크하면 간단히 추가할 
 
 ## 5.3 추가 어노테이션  
 |어노테이션|위치|의미|
-|---|---|---|
-|@Service|XXXSeriviceImpl|비즈니스 로직을 처리하는 Service 클래스|
-|@Repository|XXXDAO|데이터베이스 연동을 처리하는 DAO 클래스|
-|@Controller|XXXCotroller|사용자 요청을 제어하는 Controller 클래스|  
+|---|---|---|  
+|@Service|XXXSeriviceImpl|비즈니스 로직을 처리하는 Service 클래스|  
+|@Repository|XXXDAO|데이터베이스 연동을 처리하는 DAO 클래스|  
+|@Controller|XXXCotroller|사용자 요청을 제어하는 Controller 클래스|    
+
 - 어노테이션을 나누는 이유  
   단순히 해당 클래스를 분류하기 위해서만은 아니지만, 이 장에서는 이정도로만 이해하고 넘어가는 게 좋다.  
   @Controller는 해당 객체를 MVC 아키텍처에서 컨트롤러 객체로 인식하도록 해준다.  
