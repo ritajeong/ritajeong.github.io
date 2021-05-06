@@ -2,8 +2,8 @@
 layout: post
 title: "[스프링 퀵 스타트] Day1 정리"
 subtitle: ""
-categories: til
-tags: til
+categories: review
+tags: review
 comments: true
 date: 2021-04-30 21:46:00 -0400
 ---
@@ -145,8 +145,8 @@ Namespace 탭을 선택하고 context항목만 체크하면 간단히 추가할 
   어디에 사용하든 결과는 같지만, 대부분 멤버변수 위에 선언하여 사용함.  
 
 ## 5.3 추가 어노테이션  
-|어노테이션|위치|의미|
-|---|---|---|  
+| 어노테이션 | 위치 | 의미 |
+| ---|---|---|  
 |@Service|XXXSeriviceImpl|비즈니스 로직을 처리하는 Service 클래스|  
 |@Repository|XXXDAO|데이터베이스 연동을 처리하는 DAO 클래스|  
 |@Controller|XXXCotroller|사용자 요청을 제어하는 Controller 클래스|    

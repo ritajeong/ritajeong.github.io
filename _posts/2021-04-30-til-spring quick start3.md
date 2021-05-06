@@ -2,8 +2,8 @@
 layout: post
 title: "[스프링 퀵 스타트] Day3 정리"
 subtitle: ""
-categories: til
-tags: til
+categories: review
+tags: review
 comments: true
 date: 2021-04-30 23:20:00 -0400
 ---
