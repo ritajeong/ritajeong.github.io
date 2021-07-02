@@ -11,9 +11,8 @@ date: 2021-06-30 20:01:00 -0400
 ## 직면한 문제  
 github actinos에서 deploy.yml을 만들고, 변경사항을 push하려는데 remote rejected 에러가 발생했다.  
 <img src="/assets/img/posts/Cap 2021-06-30 20-53-45-802.jpg" width="80%" height="80%">  
-에러메시지를 구글링해보니 깃허브 토큰 문제라고 해서... 후  
-참고한 사이트 [깐깐한 조부장 블로그](https://director-joe.kr/91)
-문제 해결 시작 !!!  
+에러메시지를 구글링해보니 깃허브 토큰 문제라고 한다.  
+[깐깐한 조부장 블로그](https://director-joe.kr/91) 를 참고하여 해결했다.  
 
 ## 이유
 github 계정- Settings-Personal access tokens에서 토큰을 생성하고 다시 지정하라는데,  
