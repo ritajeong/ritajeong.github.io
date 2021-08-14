@@ -40,5 +40,4 @@ jp@gc-Active Thread Over Time, jp@gc-Response Time Over Time, jp@gc-Transactions
 ## HTTP(S) Test Script Recorder  
 (https를 사용하신다면 미리 인증서 등록을 해주세요.)  
 HTTPS Domains에 부하테스트를 진행할 사이트를 등록해주세요.  
-예시로 google.com을 등록하고 진행해보겠습니다.  
-(추가)  
+ 
