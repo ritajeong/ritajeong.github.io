@@ -2,8 +2,8 @@
 layout: post
 title: "순열과 조합, 중복순열과 중복조합"
 subtitle: ""
-categories: til
-tags: 
+categories: dev
+tags: til
 comments: true
 date: 2021-02-04 10:00:00 -0400
 ---
