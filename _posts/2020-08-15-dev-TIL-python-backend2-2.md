@@ -2,8 +2,8 @@
 layout: post
 title: "[깔끔한 파이썬 탄탄한 백엔드] 2장(2) 개발팀의 구성원"
 subtitle: ""
-categories: dev
-tags: til
+categories: review
+tags: review
 comments: true
 date: 2020-08-15 15:29:00 -0400
 ---

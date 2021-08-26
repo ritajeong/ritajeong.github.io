@@ -2,7 +2,7 @@
 layout: list
 title: Unclassified
 slug: unclassified
-menu: true
+menu: false
 submenu: false
 order: 7
 description: >

@@ -2,8 +2,8 @@
 layout: post
 title: "[깔끔한 파이썬 탄탄한 백엔드] 4장 HTTP의 구조 및 핵심 요소"
 subtitle: ""
-categories: dev
-tags: til
+categories: review
+tags: review
 comments: true
 date: 2020-09-23 11:43:00 -0400
 ---

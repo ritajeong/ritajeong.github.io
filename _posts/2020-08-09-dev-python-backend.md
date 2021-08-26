@@ -2,8 +2,8 @@
 layout: post
 title: "[깔끔한 파이썬 탄탄한 백엔드] 1장"
 subtitle: "1장 실습"
-categories: dev
-tags: til
+categories: review
+tags: review
 comments: true
 date: 2020-08-09 19:01:00 -0400
 ---
