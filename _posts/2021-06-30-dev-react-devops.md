@@ -3,7 +3,7 @@ layout: post
 title: "React 기본페이지를 github pages로 호스팅하기"
 subtitle: ""
 categories: dev
-tags: til
+tags: dev
 comments: true
 date: 2021-06-30 20:01:00 -0400
 ---

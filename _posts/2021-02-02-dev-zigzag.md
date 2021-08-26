@@ -3,7 +3,7 @@ layout: post
 title: "2차원 배열의 지그재그 순회"
 subtitle: ""
 categories: dev
-tags: til
+tags: dev
 comments: true
 date: 2021-02-01 23:01:00 -0400
 ---

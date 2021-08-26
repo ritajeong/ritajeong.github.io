@@ -3,7 +3,7 @@ layout: post
 title: "jmeter 설치하기"
 subtitle: ""
 categories: dev
-tags: til
+tags: dev
 comments: true
 date: 2021-07-01 10:25:00 -0400
 ---

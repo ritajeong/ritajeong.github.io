@@ -3,7 +3,7 @@ layout: post
 title: "순열과 조합, 중복순열과 중복조합"
 subtitle: ""
 categories: dev
-tags: til
+tags: dev
 comments: true
 date: 2021-02-04 10:00:00 -0400
 ---

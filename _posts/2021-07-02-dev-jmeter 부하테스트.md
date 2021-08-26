@@ -3,7 +3,7 @@ layout: post
 title: "jmeter 부하테스트"
 subtitle: ""
 categories: dev
-tags: til
+tags: dev
 comments: true
 date: 2021-07-02 07:33:00 -0400
 ---

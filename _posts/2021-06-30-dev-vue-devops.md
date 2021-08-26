@@ -3,7 +3,7 @@ layout: post
 title: "Vue 기본페이지를 github로 호스팅시 발생한 github 토큰문제"
 subtitle: ""
 categories: dev
-tags: til
+tags: dev
 comments: true
 date: 2021-06-30 20:01:00 -0400
 ---
