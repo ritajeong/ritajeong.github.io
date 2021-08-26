@@ -18,7 +18,7 @@ tagline:             "devlog"
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  One must live the way one thinks or end up thinking the way one has lived.
+  생각대로 살지 않으면 사는 대로 생각하게 된다.
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
